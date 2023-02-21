@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="clock.css"></link>
+        <link rel="stylesheet" href="cust.css"></link>
+    </head>
+    <body>
+        
+        <div class="grid">
+            <div class="top_page">
+
+            
+                <h1 class="title">Mathathon</h1>
+                <br><br><br><br><br><br>
+                <div class="clock-dial">
+                    <div class="point"></div>
+                    <div class="layout_hours">
+                        <div class="hour hour-1">1</div>
+                        <div class="hour hour-2">2</div>
+                        <div class="hour hour-3">3</div>
+                        <div class="hour hour-4">4</div>
+                        <div class="hour hour-5">5</div>
+                        <div class="hour hour-6">6</div>
+                        <div class="hour hour-7">7</div>
+                        <div class="hour hour-8">8</div>
+                        <div class="hour hour-9">9</div>
+                        <div class="hour hour-10">10</div>
+                        <div class="hour hour-11">11</div>
+                        <div class="hour hour-12">12</div>
+                    </div>
+                    <div class="hand-align">
+                    <div  class="minute-hand-wrapper">
+                        <div id="minute" class="minute-hand">
+                            <div class="hand"></div>
+                            <div class="arrow"></div>
+                        </div>
+                    </div>
+                    <div class="second-hand-wrapper">
+                        <div id="second" class="second-hand">
+                            <div class="hand"></div>
+                            <div class="arrow"></div>
+                        </div>
+                    </div>
+                    <div  class="hour-hand-wrapper">
+                        <div id="hour" class="hour-hand">
+                            <div class="hand"></div>
+                            <div class="arrow"></div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <br><br><br><br><br><br>
+                <!-- Timer -->
+                <h3 id="digital" style="text-align: center;"></h3> 
+            </div>
+            <div class="questions">
+                <div class="section">
+                    <h3 id="sect"></h3>
+                    <br><br><br><br>
+                    <h3 id="question"></h3>
+                    <div>
+                        <div id="load_bar" style="background-color: rgb(230, 23, 23); display:none;"></div>
+                        <h5 id="score" style="background-color:rgb(43, 195, 226);width: fit-content;
+                            font-size: x-large;margin-left: 8%; display:none;">Score: 0</h5>
+                        <h5>Solve: </h5> 
+                        <p id="expr" style="visibility:hidden;"></p>
+                    </div>
+                    <form class="answer_form">
+                        
+                        <input id="answer" class="answer" type="number" name="answer" placeholder="Enter your answer.." required>
+                        <br><br>
+                        <!-- <input class="answer_but" onclick="compare()" type="submit" value="submit"/> -->
+                        <input id="start" class="answer_but" onclick="catchBreath()" type="submit" value="start"/>
+                        <input id="restart" class="answer_but" style="display: none;" onclick="reload()" type="submit" value="restart"/>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        <!-- <script src="tick.js"></script>  will be used later-->
+        <script src="answers.js"></script>
+    </body>
+</html>
