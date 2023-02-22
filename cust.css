@@ -70,7 +70,7 @@ h2 {
 
 input[type=number] {
     padding: 10px 5px;
-    width: 300px;
+    width: 50%;
     border-style: solid;
     border-color: blue;
 }
@@ -95,7 +95,7 @@ input[type=submit]:hover {
 }
 
 #digital {
-    color: white;
+    color: red;
 }
 
 #restart {
